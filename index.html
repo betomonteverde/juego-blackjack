@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    
+    <!--Cabecera-->
+    <header class="title">
+        <h1>Blackjack</h1>
+    </header>
+
+    <!--Botones del Juego-->
+    <div class="row mt-2">
+        <div id="div-botones" class="col text-center">
+            <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+            <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir Carta</button>
+            <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
+        </div>
+    </div>
+
+    <!--Bloque de cartas del jugador-->
+    <div class="row container">
+        <div class="col">
+            <h2>Jugador - <small>0</small></h2>
+            <div id="jugador-cartas" class="div-cartas">
+                <!--<img class="cartas" src="assets/cartas/10C.png" alt="">-->
+            </div>
+        </div>
+    </div>
+
+    <!--Bloque de cartas Computadora-->
+    <div class="row container">
+        <div class="col">
+            <h2>Computadora - <small>0</small></h2>
+            <div id="computadora-cartas" class="div-cartas">
+                <!--<img class="cartas" src="assets/cartas/10C.png" alt="">-->
+            </div>
+        </div>
+    </div>
+
+    <!--Pie de Pagina-->
+    <footer class="title footer">
+        <p>By MonteverdeCode &copy;</p>
+    </footer>
+
+    <!--Scripts-->
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/juego.js"></script>
+</body>
+</html>
